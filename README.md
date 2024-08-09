@@ -102,7 +102,7 @@ INSERT INTO CarMechanics (CarID, MechanicID, ServiceDate) VALUES
    - Delete a car: `DELETE FROM Cars WHERE CarID = 1`.
    - Check the state of `Ownerships` and `CarServices` tables to confirm cascading delete.
 2. Test cascading update by updating a car ID and checking related tables.
-   - Update CarID: `UPDATE Cars SET CarID = 100 WHERE CarID = 1`.
+   - Update CarID: `UPDATE Cars SET CarID = 100 WHERE CarID = 2`.
    - Check the state of `Ownerships` and `CarServices` tables to confirm cascading update.
 3. Test cascading delete by deleting an owner and checking related tables.
    - Delete an owner: `DELETE FROM Owners WHERE OwnerID = 1`.
@@ -111,5 +111,5 @@ INSERT INTO CarMechanics (CarID, MechanicID, ServiceDate) VALUES
    - Delete a service: `DELETE FROM Services WHERE ServiceID = 1`.
    - Check the state of `CarServices` table to confirm cascading delete.
 5. Test cascading update by updating a service ID and checking related tables.
-   - Update ServiceID: `UPDATE Services SET ServiceID = 101 WHERE ServiceID = 1`.
+   - Update ServiceID: `UPDATE Services SET ServiceID = 101 WHERE ServiceID = 2`.
    - Check the state of `CarServices` table to confirm cascading update.
